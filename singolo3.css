@@ -39,7 +39,7 @@ body {
     line-height: 28px;
 }
 .Get-a-Quote .grid-form{
-    height: 403px;
+    height: 399px;
     display: grid;
     grid-template: 1fr 1fr 1fr 5fr / 620px;
     grid-gap: 13px;
@@ -69,15 +69,29 @@ input::placeholder{
     background-color: #d6564f;
     border-radius: 5px;
     border: none;
+    resize: none;
 }
 .Get-a-Quote textarea::placeholder{
     color:#f48c8f;
     position: relative;
-    top:9px;
-    left:13px;
+    top:10px;
+    left: 14px;
+    width: 603px;
     font-size: 12px;
     letter-spacing: -1.08px;
-    word-spacing: -1px;
+    word-spacing: -2.5px;
+}
+.grid-form button{
+    background-color: #d6564f;
+    border: none;
+    border-radius: 5px;
+    color:#f48c8f;
+    border: 1px solid #d6564f;
+}
+.grid-form button:hover{
+    cursor: pointer;
+    color:rgb(242,242,242);
+    border: 1px solid rgb(200,200,200);
 }
 footer {
     background-color: rgb(45,48,58);
