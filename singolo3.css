@@ -93,7 +93,72 @@ input::placeholder{
     color:rgb(242,242,242);
     border: 1px solid rgb(200,200,200);
 }
+.form-and-con
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 13px;
+}
+aside h4{
+    position: relative;
+    top: 64px;
+    left: 47px;
+    letter-spacing: 0.06px;
+    font-size: 18px;
+}
+.Get-a-Quote aside p{
+    position: relative;
+    top: 49px;
+    left: 47px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.03px;
+    font-size: 12px;
+    width: 300px;
+}
+.Get-a-Quote aside ul{
+    position: relative;
+    top: 55px;
+    left: 7px;
+}
+.Get-a-Quote aside img{
+    margin-right: 10px;
+ }
+ 
+.Get-a-Quote aside li{
+    list-style: none;
+    margin-bottom: 2px;
+}
+.Get-a-Quote aside ul .address img{
+    margin-right: 16px;
+}
+.Get-a-Quote aside a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400px;
+    letter-spacing: 0.45px;
+    color:  #f0d8d9
+}
 footer {
     background-color: rgb(45,48,58);
     height: 76px;
+    color: #666d89;
+}
+footer span{
+    position: relative;
+    left: 42px;
+    top: 31px;
+    letter-spacing: -0.19px;
+    font-size: 12px;
+}
+footer img{
+    position: relative;
+    left: 823px;
+    top: 8px;
+    margin-left: 5px;
+}
+footer img:hover{
+    position: relative;
+    top: 5px;
+    cursor: pointer;
 }
