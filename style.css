@@ -388,7 +388,7 @@ background-image: url(assets/screen-h.png);
 .persons p{
     position: relative;
     line-height: 20px;
-    top: -14px;
+    top: -16px;
     font-size: 12px;
     left: 0px;
     letter-spacing: -0.06px;
@@ -506,7 +506,7 @@ background-image: url(assets/screen-h.png);
 }
 .Get-a-Quote aside p{
     position: relative;
-    top: 49px;
+    top: 48px;
     left: 47px;
     font-weight: 400;
     line-height: 22px;
@@ -516,7 +516,7 @@ background-image: url(assets/screen-h.png);
 }
 .Get-a-Quote aside ul{
     position: relative;
-    top: 55px;
+    top: 54px;
     left: 7px;
 }
 .Get-a-Quote aside img{
@@ -562,7 +562,7 @@ footer img:hover{
 }
 .port {
     position: relative;
- top:279px;
+ top:278px;
 }
 .port1{
     position: relative;
