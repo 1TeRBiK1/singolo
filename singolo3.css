@@ -62,7 +62,7 @@ body {
     font-size: 12px;
     letter-spacing: 0.1px;
 }
-input::placeholder{
+.Get-a-Quote input::placeholder{
     color:#f48c8f;
 }
 .Get-a-Quote textarea{
@@ -99,7 +99,7 @@ input::placeholder{
     grid-template-columns: 1fr 1fr;
     grid-gap: 13px;
 }
-aside h4{
+.form-and-con aside h4{
     position: relative;
     top: 64px;
     left: 47px;

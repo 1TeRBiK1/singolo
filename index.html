@@ -7,7 +7,7 @@
             <title>Singolo</title>
             <link href="style.css" rel="stylesheet">
         </head>
-        <body>
+        <body id="HOME">
             <header>
                 <div class="wrapper">
                     <div class="hat">
@@ -16,11 +16,11 @@
                         </h1>
                         <nav>
                             <ul class="hatlist">
-                                <li><a href="">HOME</a><span>·</span></li>
-                                <li><a href="">SERVICES</a><span>·</span></li>
-                                <li><a href="">PORTFOLIO</a><span>·</span></li>
-                                <li><a href="">ABOUT</a><span>·</span></li>                            
-                                <li><a href="">CONTACT</a></li>
+                                <li><a href="#HOME">HOME</a><span>·</span></li>
+                                <li><a href="#SERVICES">SERVICES</a><span>·</span></li>
+                                <li><a href="#PORTFOLIO">PORTFOLIO</a><span>·</span></li>
+                                <li><a href="#ABOUT">ABOUT</a><span>·</span></li>                            
+                                <li><a href="#CONTACT">CONTACT</a></li>
                             </ul>
                         </nav>
                         
@@ -64,7 +64,7 @@
 
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="SERVICES">
                     <div class="wrapper">
                         <div class="our-services">
                             <h2>Our Services</h2>
@@ -121,18 +121,18 @@
                     </div>
             </section>
             <div class="wrapper port">
-                <div class="Portfolio">
+                <div class="Portfolio" id="PORTFOLIO">
                    <h2> Portfolio </h2>
                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                    <nav>
-                       <ul class="nav-list">
-                           <li><a href="">All</a></li>
-                           <li><a href="">Web Design</a></li>
-                           <li><a href="">Graphic Design</a></li>
-                           <li><a href="">Artwork</a></li>
+                       <ul class="nav-list" id="list">
+                           <li><a href="" onclick="return false">All</a></li>
+                           <li><a href="" onclick="return false">Web Design</a></li>
+                           <li><a href="" onclick="return false">Graphic Design</a></li>
+                           <li><a href="" onclick="return false">Artwork</a></li>
                        </ul>
                    </nav>
-                   <div class="image-grid">
+                   <div class="image-grid" id="imgs">
                     <img src="assets/image_1.svg" alt="image 1" class="img-hide13">
                     <img src="assets/image_2.svg" alt="image 2" class="img-hide13">
                     <img src="assets/image_3.svg" alt="image 3" class="img-hide13">
@@ -145,13 +145,9 @@
                     <img src="assets/image_10.svg" alt="image 10" class="img-hide13">
                     <img src="assets/image_11.svg" alt="image 11" class="img-hide13">
                     <img src="assets/image_12.svg" alt="image 12" class="img-hide13">
-                    <img src="assets/image_11.svg" alt="image 11" class="img-hide13">
-                    <img src="assets/image_11.svg" alt="image 11" class="img-hide13">
-                    <img src="assets/image_11.svg" alt="image 11" class="img-hide13">
-                    <img src="assets/image_11.svg" alt="image 11" class="img-hide13">
                    </div>
                 </div>
-                <div class="About-Us port1">
+                <div class="About-Us port1" id="ABOUT">
                     <h2>About Us</h2>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor <br><span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</span></p>
                     <div class="persons">
@@ -191,16 +187,16 @@
                 </div>   
             </div>
             <div class="grid-form port2">
-                <div class="Get-a-Quote">
+                <div class="Get-a-Quote" id="CONTACT">
                     <h2>Get a Quote</h2>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor<br> <span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</span></p>
                    <div class="form-and-con">
-                        <form class="grid-form">
-                            <input type="text" name="name" placeholder="Name(Required)" required>
-                            <input type="email" name="email" placeholder="Email(Required)" required>
-                            <input type="text" name="subject" placeholder="Subject">
-                            <textarea name="describtion" id="textarea" cols="10" rows="30" placeholder="Describe your project in detail..."></textarea>
-                            <button type="submit">Submit</button>
+                    <form  onsubmit="return sumbmit_form()" class="grid-form" name="form">
+                            <input type="text" name="name"      id="#f-name"placeholder="Name(Required)" required>
+                            <input type="email" name="email"    id="#f-email"placeholder="Email(Required)" required>
+                            <input type="text" name="subject"   id="#f-subject"placeholder="Subject">
+                            <textarea name="describtion" id="#textarea" cols="10" rows="30" placeholder="Describe your project in detail..."></textarea>
+                            <button type="submit" id="#submit">Submit</button>
     
                         </form>
                         
@@ -213,6 +209,14 @@
                                 <li class="mail"><img src="assets/contact_mail.svg" alt=""><a href="mailto:info@singolo.com">info@singolo.com</a></li>
                             </ul>
                         </aside>
+                        <div class="active-form hidden" id="block-form">
+                            <div class="message" id="block-content">
+                                <p id="#title-mes">Письмо отправлено</p>
+                                <p id="#subject-mes"></p>
+                                <p id="#describe-mes"></p>
+                                <button class="button-Ok" id="button-Ok">Ok</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <footer>
@@ -224,5 +228,7 @@
                         <a href="https://www.linkedin.com/"><img src="assets/linked-in.svg" alt="linked-in"></a>
                     </div>
                 </footer>
-            </body>  
+
+            </body>
+            <script src="script.js"></script>  
     </html>

@@ -54,9 +54,9 @@ body {
     text-decoration: none;
     color:#ffffff;
 }
-.hatlist a:hover {
+/*.hatlist a:hover {
     color: hsl(3, 82%, 67%);
-}
+}*/
 .hatlist li {
     list-style: none;
 }
@@ -306,6 +306,7 @@ background-image: url(assets/screen-h.png);
     display: flex;
     flex-direction: row;
     left: 2px;
+    width: 297px;
 }   
 .nav-list li{
     margin-right: 9.4px;
@@ -321,11 +322,11 @@ background-image: url(assets/screen-h.png);
     font-weight: 400;
     transition: all 0.5s ease;
 }
-.Portfolio li:hover{
+/*.Portfolio li:hover{
     color:rgb(197,197,197);
     border-color: rgb(197,197,197); 
     cursor: pointer;
-}
+}*/
 .image-grid {
     width: 220px;
     height: 187px;
@@ -384,6 +385,7 @@ background-image: url(assets/screen-h.png);
     top: -19.5px;
     left: -1px;
     letter-spacing: -0.3px;
+    
 }
 .persons p{
     position: relative;
@@ -571,4 +573,33 @@ footer img:hover{
 .port2{
     position: relative;
     top:-2px;
+}
+.hidden {
+    display: none;
+}
+.active-form {
+    vertical-align: middle;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0008;
+    z-index: 4;
+    width: 100%;
+    margin: 0 auto;   
+}
+.message {
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    width: 24%;
+    top:38%;
+    left:37%;
+    border-radius: 29px;
+    border: 5px solid rgb(240,108,100);
+    height: 35%;
+    background-color: rgb(45, 48,58);
+    display: flex;
+    justify-content: center;
 }

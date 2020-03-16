@@ -22,8 +22,9 @@ header .wrapper {
 body {
     font-family: "Lato", sans-serif;
     margin: 0 auto;
+    width: 1020px;
 }
-nav {
+.hat nav {
     position: relative;
 }
 .hat {
@@ -46,10 +47,10 @@ nav {
     width: 100%;
     margin: 0 auto;
 }
-h1 {
+.wrapper h1 {
     font-family: "Lato", sans-serif;
 }
-a {
+.hatlist a {
     text-decoration: none;
     color:#ffffff;
 }
@@ -176,7 +177,7 @@ background-image: url(assets/screen-h.png);
     height: 339px;
     transform: scale(1,-1);
 }
-h2 {
+.our-services h2 {
     color:rgb(102, 109,137);
     position: relative;
     top: 19px;
@@ -226,7 +227,7 @@ h2 {
 
      
 }
-.img{
+.block .img{
     grid-area: i;
 }
 
