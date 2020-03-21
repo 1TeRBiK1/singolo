@@ -1,4 +1,12 @@
+*{
+    scroll-behavior: smooth;
+}
+.sleep {
+    height: 340px;
+}
 header .wrapper {
+    position: fixed;
+    z-index: 3;
     background-color: #2d303a;
     height: 89px;
     max-width: 1020px;
@@ -20,6 +28,7 @@ header .wrapper {
 }
 
 body {
+    
     font-family: "Lato", sans-serif;
     margin: 0 auto;
     width: 1020px;
@@ -67,6 +76,8 @@ body {
 }
 .slider .wrapper 
 {
+    margin-top :95px;
+    position: relative;
     max-width: 1020px;
     background-color: #f06c64;
     width: 100%;
@@ -134,9 +145,9 @@ body {
 .mobile-vertical .body {
     background-image:url(assets/corpus.png);
     position: relative;
-    width: 240px;
+    width: 215px;
     top: 25px;
-    height: 483px;
+    height: 458px;
     background-repeat: no-repeat;
 }
 .mobile-vertical .screen { 
@@ -161,9 +172,9 @@ background-image: url(assets/screen-v.png);
 .mobile-gorizont .body {
     background-image:url(assets/corpus.png);
     position: relative;
-    width: 240px;
-    top: 1px;
-    height: 483px;
+    width: 216px;
+    top: 25px;
+    height: 459px;
     transform: scale(1,-1);
     background-repeat: no-repeat;
 }

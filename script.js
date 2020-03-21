@@ -39,3 +39,16 @@ document.querySelector('button').addEventListener("click",()=>{
     document.getElementById('block-form').style.display="none";
     document.getElementById('block-content').style.display="none";
  })
+ function clickOnIphone(){
+    let style_for_screen = 'background: #000';
+    let this_iphone = Array.from(this.getElementsByClassName('sleep'))[0];
+    if(this_iphone.style.length){
+        this_iphone.style = '';
+    }else{
+        this_iphone.style = style_for_screen;
+    }
+}
+let iphone = Array.from(document.getElementsByClassName('body'));
+iphone.forEach(elem => elem.onclick = clickOnIphone)
+
+let slider_1 = true;
