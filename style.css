@@ -28,7 +28,6 @@ header .wrapper {
 }
 
 body {
-    
     font-family: "Lato", sans-serif;
     margin: 0 auto;
     width: 1020px;
@@ -351,6 +350,10 @@ background-image: url(assets/screen-h.png);
 .img-hide13:nth-child(n+13){
     display: none;
 }
+.port1{
+    position: relative;
+    top: 277px;
+}
 .About-Us{
     color:rgb(102, 109,137);
 }
@@ -577,13 +580,9 @@ footer img:hover{
     position: relative;
  top:278px;
 }
-.port1{
-    position: relative;
-    top:-1px;
-}
 .port2{
     position: relative;
-    top:-2px;
+    top:276px;
 }
 .hidden {
     display: none;
@@ -613,4 +612,7 @@ footer img:hover{
     background-color: rgb(45, 48,58);
     display: flex;
     justify-content: center;
+}
+.active{
+    color:#f06c64;
 }
