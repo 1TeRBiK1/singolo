@@ -24,11 +24,14 @@ document.getElementById('imgs').addEventListener("click",hoverimg)
 document.querySelector('button').addEventListener("click",()=>{
     event.preventDefault();
     let form = document.forms.form;
-    let elemName = form.elements.name; 
-    console.log(elemName.value);
-    let elemEmail = form.elements.email;
-    console.log(elemEmail.value)
+    let elemsubject = form.elements.subject; 
+    let elemdescribtion = form.elements.describtion;
     let elemSubject = form.elements.subject;
+    let subject_message = elemsubject.value == '' ? 'Без темы' : 'Тема: ' + elemsubject.value;
+    let describtion_message = elemdescribtion.value == '' ? 'Без описания' : 'Описание: ' + elemdescribtion.value;
+    document.querySelector('.subject-mes').innerText = `${subject_message}`;
+    document.querySelector('.describe-mes').innerText = `${describtion_message}`;
+
     console.log(elemSubject.value);
     document.getElementById('block-form').style.display="block";
     document.getElementById('block-content').style.display="block"; })
@@ -70,15 +73,22 @@ function clickOnChev(){
         center.forEach(elem => elem.style = 'display: none');
      //   center.style = 'background: url(assets/slider-2.png);height: 513px; ';
         slider.style = 'background-color: #648bf0; border-bottom: 6px solid #74b9ff;background: url(assets/slider-2.png);background-repeat: no-repeat;';
+        left_button.style = 'right: -4px; top: 2px;';
         slider_1 = false;
     }else{
         center.style = '';
         center.forEach(elem => elem.style = '');
         slider.style = 'background-color: #f06c64; border-bottom: 6px solid #ea676b;';
         slider_1 = true;
+        left_button.style = '';
+    
     }
 }
+let left_button = Array.from(document.getElementsByClassName('left-button'))[0];
 let center = Array.from(document.getElementsByClassName('center'));
 let slider = Array.from(document.getElementsByClassName('slider'))[0];
 
 let slider_1 = true;
+
+let subject = document.querySelector('#f-subject');
+let discribe = document.querySelector('#textarea');
