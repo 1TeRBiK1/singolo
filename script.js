@@ -65,4 +65,20 @@ function onScroll(){
         }
     });
 }
+function clickOnChev(){
+    if(slider_1){
+        center.forEach(elem => elem.style = 'display: none');
+     //   center.style = 'background: url(assets/slider-2.png);height: 513px; ';
+        slider.style = 'background-color: #648bf0; border-bottom: 6px solid #74b9ff;background: url(assets/slider-2.png);background-repeat: no-repeat;';
+        slider_1 = false;
+    }else{
+        center.style = '';
+        center.forEach(elem => elem.style = '');
+        slider.style = 'background-color: #f06c64; border-bottom: 6px solid #ea676b;';
+        slider_1 = true;
+    }
+}
+let center = Array.from(document.getElementsByClassName('center'));
+let slider = Array.from(document.getElementsByClassName('slider'))[0];
 
+let slider_1 = true;
