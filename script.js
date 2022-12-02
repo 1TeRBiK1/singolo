@@ -83,7 +83,7 @@ const iphones = document.querySelectorAll(".iphone");
 iphones.forEach((iphone) => iphone.addEventListener("click", clickOnIphone));
 
 const onScroll = (event) => {
-  const sectionDivs = document.querySelectorAll("body > div");
+  const sectionDivs = document.querySelectorAll("body > div[id]");
   const navigationLink = document.querySelectorAll(".hatlist > li > a");
   const height = event.pageY;
   sectionDivs.forEach((section, index) => {

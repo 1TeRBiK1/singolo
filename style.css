@@ -1,6 +1,9 @@
 * {
   scroll-behavior: smooth;
 }
+.hidden-menu {
+  display: none;
+}
 .sleep {
   height: 340px;
   transition: 0.4s ease-in;
@@ -621,6 +624,92 @@ footer img:hover {
   color: #f48c8f;
   left: 188px;
   border: 1px solid #d6564f;
+}
+@media (max-width: 768px) {
+  .hidden-menu {
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background: #2d303a;
+    box-sizing: border-box;
+    width: 250px;
+    height: 100%;
+    top: 80px;
+    padding-left: 30px;
+    font-size: 30px;
+    left: -372px;
+    transition: left 0.5s;
+    z-index: 9999;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .hidden-menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .hidden-menu a:hover {
+    color: #f06c64;
+  }
+  .hidden-menu-ticker,
+  .hide-check {
+    display: none;
+  }
+  .btn-menu {
+    color: #fff;
+    position: fixed;
+
+    top: 33px;
+    left: 60px;
+    cursor: pointer;
+    transition: left 0.23s;
+    z-index: 3;
+    width: 25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .btn-menu span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #cdcdcd;
+    margin: 6px 0 0;
+    transition: all 0.1s linear 0.23s;
+    position: relative;
+  }
+  .btn-menu span.first {
+    margin-top: 0;
+  }
+  .hide-check:checked ~ .checkbox-anim .switcher {
+    left: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu {
+    left: 60px;
+  }
+  .hidden-menu-ticker:checked ~ .hidden-menu {
+    left: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: rotate(-45deg);
+    top: 10px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: rotate(45deg);
+    top: -10px;
+  }
+  .hidden-menu li {
+    margin-bottom: 30px;
+  }
+  .hidden-menu li:first-child {
+    margin-top: 60px;
+  }
+  .hat > nav {
+    display: none;
+  }
 }
 @media (max-width: 1019px) {
   header .wrapper {

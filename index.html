@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="HOME">
+    <div>
       <header>
         <div class="wrapper">
           <div class="hat">
@@ -29,7 +29,22 @@
         </div>
       </header>
     </div>
-    <div>
+    <div class="burger">
+      <input type="checkbox" id="hmt" class="hidden-menu-ticker" />
+      <label class="btn-menu" for="hmt">
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+      </label>
+      <ul class="hidden-menu" id="hidden-menu">
+        <li><a href="#HOME">HOME</a></li>
+        <li><a href="#SERVICES">SERVICES</a></li>
+        <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+        <li><a href="#ABOUT">ABOUT</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+      </ul>
+    </div>
+    <div id="HOME">
       <section class="slider">
         <div class="wrapper">
           <div class="left-button chevButton">
